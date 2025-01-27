@@ -1,22 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Controlit" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.Controlit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="Theme.Controlit" parent="Base.Theme.Controlit" >
+        <item name="android:background">#E4E4E4</item>
     </style>
 
     <style name="Theme.Controlit.splash" parent="Base.Theme.Controlit" >
         <item name="android:background">#008080</item>
         <item name="android:textColor">@color/white</item>
         <item name="buttonStyle">@style/SplashButtonStyle</item>
+        <item name="android:textSize">20sp</item>
     </style>
     <style name="SplashButtonStyle" parent="Widget.Material3.Button">
         <item name="backgroundTint">#042628</item>
         <item name="android:fontFamily">@font/albert_sans</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="Theme.Controlit.signup" parent="Base.Theme.Controlit" >

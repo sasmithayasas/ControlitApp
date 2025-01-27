@@ -120,7 +120,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/signup"
         android:layout_centerHorizontal="true"
-        android:text="Already have an account?" />
+        android:text="Already have an account?"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/login"

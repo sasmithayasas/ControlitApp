@@ -94,7 +94,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/login"
         android:layout_centerHorizontal="true"
-        android:text="Dont have an account?" />
+        android:text="Dont have an account?"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/signup"
@@ -104,6 +105,7 @@
         android:layout_below="@id/alreadyhave"
         android:layout_centerHorizontal="true"
         android:background="#00FFFFFF"
-        android:text="@string/sign_up" />
+        android:text="@string/sign_up"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
