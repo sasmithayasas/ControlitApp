@@ -1,12 +1,17 @@
 package com.sasmi.controlit.fragments;
 
+import android.app.DatePickerDialog;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.sasmi.controlit.R;
 
@@ -55,6 +60,7 @@ public class AddItemFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -62,5 +68,33 @@ public class AddItemFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_add_item, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        EditText editTextDate = view.findViewById(R.id.editTextText4);
+
+        editTextDate.setOnClickListener(v -> {
+            // Get current date
+            Calendar calendar = Calendar.getInstance();
+            int year = calendar.get(Calendar.YEAR);
+            int month = calendar.get(Calendar.MONTH);
+            int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+            // Open DatePickerDialog
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    requireContext(), // Use requireContext() in Fragment
+                    (view1, selectedYear, selectedMonth, selectedDay) -> {
+                        // Format the date and set it to the EditText
+                        String date = selectedDay + "/" + (selectedMonth + 1) + "/" + selectedYear;
+                        editTextDate.setText(date);
+                    },
+                    year, month, day
+            );
+
+            datePickerDialog.show();
+        });
     }
 }
