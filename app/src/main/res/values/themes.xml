@@ -5,7 +5,6 @@
     </style>
 
     <style name="Theme.Controlit" parent="Base.Theme.Controlit" >
-        <item name="android:background">#E4E4E4</item>
     </style>
 
     <style name="Theme.Controlit.splash" parent="Base.Theme.Controlit" >
@@ -17,6 +16,7 @@
         <item name="backgroundTint">@color/white</item>
         <item name="android:fontFamily">@font/albert_sans</item>
         <item name="android:textColor">#042628</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <style name="Theme.Controlit.signup" parent="Base.Theme.Controlit" >
@@ -28,7 +28,7 @@
     </style>
     <style name="customTextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:fontFamily">@font/albert_sans</item>
-        <item name="android:textColor">#80000000</item>
+        <item name="hintTextColor">#80000000</item>
         <item name="android:background">@drawable/rounded_edittext_background</item>
         <item name="android:textSize">20sp</item>
     </style>
@@ -60,7 +60,11 @@
         <item name="colorControlNormal">@color/black</item>
         <item name="colorControlActivated">@color/black</item>
         <item name="colorControlHighlight">@color/black</item>
-
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
     </style>
+
+
+
 
 </resources>

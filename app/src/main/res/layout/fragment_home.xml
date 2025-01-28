@@ -6,14 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
     android:theme="@style/Theme.Controlit.Home"
-    android:background="#E4E4E4">
+    android:background="#E4E4E4"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp">
+        android:layout_marginHorizontal="40dp">
 
 
         <TextView
@@ -66,8 +67,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView3"
-                    android:layout_marginStart="32dp"
                     android:layout_marginTop="56dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_toEndOf="@+id/imageView2"
                     android:text="Next Service due: 12/10/2025" />
 
@@ -76,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView3"
-                    android:layout_marginStart="34dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="124dp"
                     android:layout_toEndOf="@+id/imageView2"
                     android:text="Warranty expires: 15/03/2027" />

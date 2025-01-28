@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:theme="@style/Theme.Controlit.splash">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp">
+
+
+            <ImageView
+                android:id="@+id/splash_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/splash_image" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/splash_mainText"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="Want to stay up to date about your own home?"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/splash_subText"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/splash_mainText"
+
+                    android:fontFamily="@font/inter"
+                    android:text="We got you!"
+                    android:textSize="30sp"/>
+
+                <Button
+                    style="@style/SplashButtonStyle"
+                    android:id="@+id/login"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/splash_subText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:text="Login"
+                    android:textSize="20sp"
+                    app:cornerRadius="16sp" />
+
+                <Button
+                    style="@style/SplashButtonStyle"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/signup"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/login"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sign Up!"
+                    android:textSize="20sp"
+                    app:cornerRadius="16sp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

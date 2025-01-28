@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/albert_sans"
-            android:text="Username" />
+            android:hint="Username" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/albert_sans"
-            android:text="Password" />
+            android:hint="Password" />
 
 
     </com.google.android.material.textfield.TextInputLayout>

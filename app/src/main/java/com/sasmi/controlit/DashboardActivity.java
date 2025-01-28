@@ -43,6 +43,8 @@ public class DashboardActivity extends AppCompatActivity {
 
             return true;
         });
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -50,11 +52,11 @@ public class DashboardActivity extends AppCompatActivity {
         });
     }
 
-    private void replaceFragment(Fragment fragment) {
+    private void replaceFragment(Fragment fragment){
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.frameLayout, fragment)
-                .addToBackStack(null) // Add the transaction to the back stack
                 .commit();
+
     }
 }
