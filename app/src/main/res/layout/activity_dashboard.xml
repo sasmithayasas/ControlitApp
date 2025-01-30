@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardActivity"
-    android:theme="@style/Theme.Controlit"
-    android:backgroundTint="#E4E4E4"
-    android:background="#E4E4E4">
+    android:theme="@style/Theme.Controlit.Account"
+    style="@style/Theme.Controlit.Account.Main">
 
 
 
@@ -31,8 +30,7 @@
         app:labelVisibilityMode="unlabeled"
         app:elevation="0dp"
         android:elevation="0dp"
-        android:background="#E4E4E4"
-        android:backgroundTint="#E4E4E4"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu"
+        style="@style/Theme.Controlit.Account.Main"/>
 
 </RelativeLayout>

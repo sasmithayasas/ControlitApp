@@ -3,7 +3,10 @@ package com.sasmi.controlit;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    Animation topAnim;
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
+
+        image = findViewById(R.id.splash_image);
+
+        image.setAnimation(topAnim);
 
         Button signupButton = findViewById(R.id.signup);
         Button loginButton = findViewById(R.id.login);
