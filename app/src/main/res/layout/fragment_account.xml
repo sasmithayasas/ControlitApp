@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AccountFragment"
-    android:theme="@style/Theme.Controlit.Home"
-    android:background="#E4E4E4">
+    android:theme="@style/Theme.Controlit.Account"
+    style="@style/Theme.Controlit.Account.Main">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_marginTop="40dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="0dp"
-                app:cardBackgroundColor="@color/white">
+                style="@style/Theme.Controlit.Account.CardViewStyle">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -106,14 +106,15 @@
                     android:layout_height="150dp"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#5251E8F1"
+                    style="@style/Theme.Controlit.Account.CardView2Style"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="0dp"
                     app:cardMaxElevation="0dp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent">>
 
                         <TextView
                             android:id="@+id/textView8"
@@ -156,7 +157,7 @@
                     android:layout_height="150dp"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    app:cardBackgroundColor="#5251E8F1"
+                    style="@style/Theme.Controlit.Account.CardView2Style"
                     android:layout_marginStart="10dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="0dp"
@@ -164,7 +165,8 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent">>
 
                         <TextView
                             android:id="@+id/textView11"

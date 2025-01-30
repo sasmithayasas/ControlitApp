@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment"
-    android:theme="@style/Theme.Controlit.Home"
-    android:background="#E4E4E4"
     android:layout_gravity="center_horizontal"
-    android:layout_centerHorizontal="true">
+    android:layout_centerHorizontal="true"
+    android:theme="@style/Theme.Controlit.Account"
+    style="@style/Theme.Controlit.Account.Main">
 
 
     <RelativeLayout
@@ -34,9 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            style="@style/Theme.Controlit.Home"
             app:cardCornerRadius="20dp"
-            app:cardElevation="0dp">
+            app:cardElevation="0dp"
+            style="@style/Theme.Controlit.Account.CardView2Style">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -100,10 +100,10 @@
                 android:layout_height="150dp"
                 android:layout_marginVertical="10dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#5251E8F1"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
-                app:cardMaxElevation="0dp">
+                app:cardMaxElevation="0dp"
+                style="@style/Theme.Controlit.Account.CardView2Style">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -150,11 +150,11 @@
                 android:layout_height="150dp"
                 android:layout_marginVertical="10dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#5251E8F1"
                 android:layout_marginStart="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
-                app:cardMaxElevation="0dp">
+                app:cardMaxElevation="0dp"
+                style="@style/Theme.Controlit.Account.CardView2Style">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -212,7 +212,7 @@
                 android:layout_height="150dp"
                 android:layout_marginVertical="10dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#5251E8F1"
+                style="@style/Theme.Controlit.Account.CardView2Style"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
                 app:cardMaxElevation="0dp">
@@ -259,7 +259,7 @@
                 android:layout_height="150dp"
                 android:layout_marginVertical="10dp"
                 android:layout_weight="1"
-                app:cardBackgroundColor="#5251E8F1"
+                style="@style/Theme.Controlit.Account.CardView2Style"
                 android:layout_marginStart="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"

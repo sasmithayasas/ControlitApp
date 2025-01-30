@@ -60,4 +60,18 @@
         <item name="android:textColorHint">@color/black</item>
     </style>
 
+
+    <style name="Theme.Controlit.Account" parent="Base.Theme.Controlit">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="Theme.Controlit.Account.Main" parent="Base.Theme.Controlit">
+        <item name="android:background">#505050</item>
+    </style>
+    <style name="Theme.Controlit.Account.CardViewStyle">
+        <item name="cardBackgroundColor">#5A5A5A</item>
+    </style>
+    <style name="Theme.Controlit.Account.CardView2Style">
+        <item name="cardBackgroundColor">#51A9C4</item>
+    </style>
+
 </resources>
